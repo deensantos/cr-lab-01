@@ -1,7 +1,8 @@
+
 #Remote backend
 terraform {
   backend "s3" {
-    bucket = "brambles-state-files"
+    bucket = "cr-lab-state-files"
     key    = "global/cr-lab-01/iam"
     region = "us-east-2"
 
