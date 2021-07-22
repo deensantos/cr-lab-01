@@ -1,10 +1,10 @@
 variable "subnet_dev" {
-  type = "String"
+  type = string
   default = "subnet-0e2322108e7264123"
 
 }
 
 variable "private_ec2_ip" {
-  type = "String"
-  default = "10.0.1.100"
+  type = string
+  default = "10.0.1.200"
 }

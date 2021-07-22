@@ -9,7 +9,7 @@ terraform {
   }
 }
 
-resource "aws_instance" "linux_vm" {
+resource aws_instance "linux_vm" {
     ami = "ami-0233c2d874b811deb"
     instance_type = "t2.micro"
 
@@ -20,7 +20,7 @@ resource "aws_instance" "linux_vm" {
 
 }
 
-resource network_interface "ec2_nic"{
+resource aws_network_interface "ec2_nic" {
   subnet_id = var.subnet_dev
   private_ip = var.private_ec2_ip
 }
